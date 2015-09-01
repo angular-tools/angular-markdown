@@ -1,9 +1,11 @@
 (function () {
-    angular.module('angularMarkdown', ['ngSanitize'])
+    angular.module('angularMarkdown', [])
+/*
         .config(function ($compileProvider) {
             $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|javascript):/);
         })
-        .service('$markdown', ['$sce', '$sanitize', function ($sce, $sanitize) {
+*/
+        .service('$markdown', ['$sce', function ($sce) {
             var serviceInstance = {};
             var converter = new Showdown.converter();
 

@@ -1,0 +1,31 @@
+{
+  "name": "Angular markdown directive",
+  "authors": [
+    "minutephp <dev@minutephp.com>"
+  ],
+  "description": "Simple AngularJS plugin to handle markdown text",
+  "main": "src/js/angular-markdown.js",
+  "keywords": [
+    "angularjs",
+    "image",
+    "editor"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.minutephp.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "14a1782f28",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "14a1782f287194fefc9c15d4131d3cc9b1b81c3b"
+  },
+  "_source": "git://github.com/angular-tools/angular-markdown.git",
+  "_target": "*",
+  "_originalSource": "angular-tools/angular-markdown"
+}
