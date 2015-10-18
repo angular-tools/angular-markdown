@@ -1,5 +1,5 @@
 (function () {
-    angular.module('angularMarkdown', [])
+    angular.module('angularMarkdown', ['ngSanitize'])
 /*
         .config(function ($compileProvider) {
             $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|javascript):/);
@@ -25,6 +25,11 @@
         .filter('markdown', ['$markdown', function ($markdown) {
             return function (text) {
                 return $markdown.markdownToHTML(text);
+            }
+        }])
+        .filter('safeMarkdown', ['$markdown', '$sanitize', function ($markdown, $sanitize) {
+            return function (text) {
+                return $markdown.markdownToHTML($sanitize(text));
             }
         }]);
 })();
